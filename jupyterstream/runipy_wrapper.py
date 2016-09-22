@@ -17,7 +17,7 @@ notebook_runs - auxiliary path suggested to store new notebooks
 #=========== Update Details ============
 # --- path details
 # directory of original notebook
-notebook_dir = "/home/eyalk/projects/blog/runipy/notebooks/" # directory of original notebook  
+notebook_dir = "/home/eyalk/projects/blog/public/jupyterstream/notebooks/" # directory of original notebook  
 # directory of the cloned notebooks
 notebook_dirnew = notebook_dir + "notebook_runs/" # directory of new notebook  
 # name of the original notebook (without extension .ipynb)
