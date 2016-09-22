@@ -19,12 +19,22 @@ To run the demo these path updates are required:
 * Inside `/jupyterstream/runipy_wrapper.py` update `notebook_dir` to your  `./jupyterstream/notebooks/` location
 
 After these are set:  
-To test running one state (e.g, Washington DC):  
+To examine (but not run) the `runipy` command for one state (e.g, Washington DC): 
+```
+python runipy_wrapper.py -state_abrv DC
+```
+
+To execute on one state (e.g, Washington DC) add the `-run` flag is in:  
 ```
 python runipy_wrapper.py -state_abrv DC -run
 ```
 
-To test running on all states on 4 servers:
+To examine (but not run) the `parallel` command on all states on 4 servers: 
+```
+python parallel_run.py -parallel 4
+```
+
+To test running on all states on 4 servers add the `-run` flag is in:
 ```
 python parallel_run.py -parallel 4 -run
 ```
