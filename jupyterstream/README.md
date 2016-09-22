@@ -17,3 +17,14 @@ To run the demo these path updates are required:
 * Inside `./jupyterstream/notebooks/my_notebook.ipynb` update the directory of `dir_runipy` to your `./jupyterstream/notebooks/` location.   
 * Same for `my_notebook_maser.ipynb` in regards to `dir_notebooks`.  
 * Inside `/jupyterstream/runipy_wrapper.py` update `notebook_dir` to your  `./jupyterstream/notebooks/` location
+
+After these are set:  
+To test running one state (e.g, Washington DC):  
+```
+python runipy_wrapper.py -state_abrv DC -run
+```
+
+To test running on all states on 4 servers:
+```
+python parallel_run.py -parallel 4 -run
+```
