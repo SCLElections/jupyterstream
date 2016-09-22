@@ -1,3 +1,4 @@
+#Jupyterstream
 **Data delivery streamlines simplified by handy manipulations of Jupyter notebooks**  
 This code accompanies [our blog](http://wiki.cambridgeanalytica.net/blog-runipy) which discusses the benefits of usage of `runipy`, parallelising executions and aggreating the results in one master notebook using `nbformat`.
 
@@ -11,9 +12,8 @@ We suggest using `runipy` to loop over notebooks or to run in parallel. Once the
 
 ***Disclaimer:*** *This is not an exhaustive explanation of the functionality of `runipy`, `nbformat` or `parallel`, but rather a suggestion from which one can develop their own preference of use.* 
 
-
+# Demo
 To run the demo these path updates are required:  
-
 * Inside `./jupyterstream/notebooks/my_notebook.ipynb` update the directory of `dir_runipy` to your `./jupyterstream/notebooks/` location.   
 * Same for `my_notebook_maser.ipynb` in regards to `dir_notebooks`.  
 * Inside `/jupyterstream/runipy_wrapper.py` update `notebook_dir` to your  `./jupyterstream/notebooks/` location
