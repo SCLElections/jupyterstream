@@ -1,9 +1,6 @@
-import numpy as np
 import os
 import sys
 
-
-from os import environ
 from subprocess import call
 
 """
@@ -15,11 +12,15 @@ notebook_runs - auxiliary path suggested to store new notebooks
 """
 
 #=========== Update Details ============
+import demo_path
 # --- path details
 # directory of original notebook
-notebook_dir = "/home/eyalk/projects/blog/public/jupyterstream/notebooks/" # directory of original notebook  
+#notebook_dir = "/home/eyalk/projects/blog/public/jupyterstream/notebooks/" # directory of original notebook  
+notebook_dir = "{}notebooks/".format(demo_path.path)
 # directory of the cloned notebooks
-notebook_dirnew = notebook_dir + "notebook_runs/" # directory of new notebook  
+notebook_dirnew = "{}notebook_runs/".format(notebook_dir) # directory of new notebook  
+if not os.path.exists(notebook_dirnew):
+    os.makedirs(notebook_dirnew)
 # name of the original notebook (without extension .ipynb)
 notebook_prefix = "my_notebook" 
 
@@ -54,7 +55,7 @@ print "=================================================="
 
 # execution
 if run:
-    environ[str_var] = val
+    os.environ[str_var] = val
     call(["runipy","-o", notebook_new])
 else:
     print "(The above is the ruinpy call, but it did not run.) To execute, add the flag: -run "
