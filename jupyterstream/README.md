@@ -15,10 +15,8 @@ We suggest using `runipy` to loop over notebooks or to run in parallel. Once the
 # Demo
 
 ## Setup
-To run the demo these path updates are required:  
-* Inside `./jupyterstream/notebooks/my_notebook.ipynb` update the directory of `dir_runipy` to your `./jupyterstream/notebooks/` location.   
-* Same for `my_notebook_maser.ipynb` in regards to `dir_notebooks`.  
-* Inside `/jupyterstream/runipy_wrapper.py` update `notebook_dir` to your  `./jupyterstream/notebooks/` location
+To run the demo you will need to modify within `demo_path.py` the path to this `jupyterstream` location.  
+
 
 ## `runipy_wrapper.py`
 
