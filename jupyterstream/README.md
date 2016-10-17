@@ -20,7 +20,7 @@ To run the demo you will need to modify within `demo_path.py` the path to this `
 
 ## `runipy_wrapper.py`
 
-After completing the setup, to examine (but not run) the `runipy` command for one state (e.g, Washington DC): 
+After completing the [setup](https://github.com/cambridgeanalytica/public/tree/master/jupyterstream#setup), to examine (but not run) the `runipy` command for one state (e.g, Washington DC): 
 ```
 python runipy_wrapper.py -state_abrv DC
 ```
@@ -37,7 +37,7 @@ To examine (but not run) the `parallel` command on all states on 4 servers:
 python parallel_run.py -parallel 4
 ```
 
-To test running on all states on 4 servers add the `-run` flag is in:
+To execute parallel runs on 4 servers add the `-run` flag is in:
 ```
 python parallel_run.py -parallel 4 -run
 ```
