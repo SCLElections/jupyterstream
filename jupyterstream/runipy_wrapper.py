@@ -15,7 +15,6 @@ notebook_runs - auxiliary path suggested to store new notebooks
 import demo_path
 # --- path details
 # directory of original notebook
-#notebook_dir = "/home/eyalk/projects/blog/public/jupyterstream/notebooks/" # directory of original notebook  
 notebook_dir = "{}notebooks/".format(demo_path.path)
 # directory of the cloned notebooks
 notebook_dirnew = "{}notebook_runs/".format(notebook_dir) # directory of new notebook  
