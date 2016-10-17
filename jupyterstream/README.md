@@ -16,7 +16,7 @@ We suggest using `runipy` to loop over notebooks or to run in parallel. Once the
 
 ## Setup
 To run the demo you will need to modify within `demo_path.py` the path to this `jupyterstream` location.  
-
+To run the parallelisation part, the GNU [`parallel`](http://savannah.gnu.org/projects/parallel/) is required.
 
 ## `runipy_wrapper.py`
 
@@ -43,3 +43,7 @@ To execute parallel runs on 4 servers add the `-run` flag is in:
 python parallel_run.py -parallel 4 -run
 ```
 Within  `notebook_runs` should be 31 executed notebooks ([only 32 states](http://www.huffingtonpost.com/2014/05/27/state-party-registration_n_5399977.html) require party registration; Here we exclude California).
+
+## Master Notebook
+We also demo a "master" notebook that collects the important metrics and figures for analysis.  
+See `[...]/jupyterstream/notebooks/my_notebook_master.ipynb` for details. 
