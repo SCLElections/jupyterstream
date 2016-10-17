@@ -29,6 +29,7 @@ To execute on one state (e.g, Washington DC) add the `-run` flag is in:
 ```
 python runipy_wrapper.py -state_abrv DC -run
 ```
+This will create a subfolder in `[...]/jupyterstream/notebooks/` called `notebook_runs`. Within should be an executed notebook called `my_notebook_DC.ipynb`.  
 
 ## `parallel_run.py`
 
@@ -41,3 +42,4 @@ To execute parallel runs on 4 servers add the `-run` flag is in:
 ```
 python parallel_run.py -parallel 4 -run
 ```
+Within  `notebook_runs` should be 31 executed notebooks ([only 32 states](http://www.huffingtonpost.com/2014/05/27/state-party-registration_n_5399977.html) require party registration; Here we exclude California).
