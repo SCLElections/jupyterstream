@@ -10,7 +10,7 @@ This code accompanies [our blog](http://wiki.cambridgeanalytica.net/blog-runipy)
 For the demo to work you need to change 'path' in 'demo_path.py' to this directory ('[...]/jupyterstream/demo/')  
 To run the parallelisation part, the GNU [`parallel`](http://savannah.gnu.org/projects/parallel/) is required.
 
-## `runipy_wrapper.py`
+## `jupyterstream.runipy_wrapper`
 
 After completing the [setup](https://github.com/cambridgeanalytica/public/tree/master/jupyterstream#setup), to examine (but not run) the `runipy` command for one state (e.g, Washington DC): 
 ```
@@ -23,7 +23,7 @@ python demo_runipy.py -l DC --run
 ```
 This will create a subfolder in `[...]/jupyterstream/demo/notebooks/` called `notebook_runs`. Within should be an executed notebook called `my_notebook_DC.ipynb`.  
 
-## `parallel_run.py`
+## `jupyterstream.parallel_run`
 To run the parallelisation part, the GNU [`parallel`](http://savannah.gnu.org/projects/parallel/) is required.  
 
 To examine (but not run) the `parallel` command on a few variables on 3 servers: 
