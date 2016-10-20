@@ -2,6 +2,8 @@
 **Data delivery streamlines simplified by handy manipulations of Jupyter notebooks**  
 This code accompanies [our blog](http://wiki.cambridgeanalytica.net/blog-runipy) which discusses the benefits of usage of `runipy`, parallelising executions and aggreating the results in one master notebook using `nbformat`.
 
+![Alt text](./png/jupyterstream.png?raw=true "Title")
+
 In detail we discuss:  
 * Applying [`runipy`](https://pypi.python.org/pypi/runipy), a convienient tool to run a notebook from the command line
 * Parallelising executions the bash command `parallel`.   
@@ -11,6 +13,9 @@ We suggest using `runipy` to loop over notebooks or to run in parallel. Once the
 
 
 ***Disclaimer:*** *This is not an exhaustive explanation of the functionality of `runipy`, `nbformat` or `parallel`, but rather a suggestion from which one can develop their own preference of use.* 
+
+
+
 
 # Setup
 ```
