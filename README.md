@@ -12,6 +12,16 @@ We suggest using `runipy` to loop over notebooks or to run in parallel. Once the
 
 ***Disclaimer:*** *This is not an exhaustive explanation of the functionality of `runipy`, `nbformat` or `parallel`, but rather a suggestion from which one can develop their own preference of use.* 
 
+# Setup
+```
+python setup.py install 
+```
+or 
+```
+python setup.py develop
+```
+
+
 # Demo
 
 ## Setup
