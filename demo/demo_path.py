@@ -1,4 +1,8 @@
-# For the Demo to work you need to change to the parent directory "jupyterstream", 
-# I.e the directory ihh which README.md is.
-path = "/change/your/path/to/jupyterstream/"
+# For the demo to work you need to change 'path' in 'demo_path.py' to this directory ('[...]/jupyterstream/demo/')
+path = "/change/your/path/to/jupyterstream/demo/"
 path +="/"
+
+if "/change/your/path/to/jupyterstream/demo/" == path:
+    print "!!===================================================================================================================!!"
+    print "    For the demo to work you need to change 'path' in 'demo_path.py' to this directory ('[...]/jupyterstream/demo/')  "
+    print "!!===================================================================================================================!!"

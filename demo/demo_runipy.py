@@ -37,7 +37,7 @@ To execute parallel runs on 3 servers add the --run flag is in:
 import demo_path
 
 # directory of original notebook
-notebook_dir = "{}demo/notebooks/".format(demo_path.path)
+notebook_dir = "{}/notebooks/".format(demo_path.path)
 # name of the original notebook (without extension .ipynb)
 notebook_prefix = "my_notebook"
 
