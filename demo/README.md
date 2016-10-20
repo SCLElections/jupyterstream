@@ -44,4 +44,4 @@ python demo_runipy.py -j 4 -l AK,AR,AZ,CO,CT,DC,DE,FL,IA,ID,KS,KY,LA,MA,ME,MD,NC
 
 ## Master Notebook
 We also demo a "master" notebook that collects the important metrics and figures for analysis.  
-See `[...]/jupyterstream/notebooks/my_notebook_master.ipynb` for details. 
+See [`my_notebook_master.ipynb`](./notebooks/my_notebook_master.ipynb) for details. 
