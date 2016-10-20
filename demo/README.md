@@ -1,58 +1,46 @@
-#jupyterstream
+#DEMO: `jupyterstream`
 **Data delivery streamlines simplified by handy manipulations of Jupyter notebooks**  
 This code accompanies [our blog](http://wiki.cambridgeanalytica.net/blog-runipy) which discusses the benefits of usage of `runipy`, parallelising executions and aggreating the results in one master notebook using `nbformat`.
 
-In detail we discuss:  
-* Applying [`runipy`](https://pypi.python.org/pypi/runipy), a convienient tool to run a notebook from the command line
-* Parallelising executions the bash command `parallel`.   
-* Using [`nbformat`](https://nbformat.readthedocs.io/en/latest/format_description.html), a python module to read text and image outputs from notebooks.  
-
-We suggest using `runipy` to loop over notebooks or to run in parallel. Once the notebooks runs are completed, to figure out which runs were succesful and which require special attention,  a master notebook could collect the important metrics and figures (!) for analysis. 
-
+![Alt text](../png/jupyterstream.png?raw=true "Title")
 
 ***Disclaimer:*** *This is not an exhaustive explanation of the functionality of `runipy`, `nbformat` or `parallel`, but rather a suggestion from which one can develop their own preference of use.* 
 
-# Setup
-```
-python setup.py install 
-```
-or 
-```
-python setup.py develop
-```
-
-
-# Demo
-
 ## Setup
-To run the demo you will need to modify within `demo_path.py` the path to this `jupyterstream` location.  
+For the demo to work you need to change 'path' in 'demo_path.py' to this directory ('[...]/jupyterstream/demo/')  
 To run the parallelisation part, the GNU [`parallel`](http://savannah.gnu.org/projects/parallel/) is required.
 
 ## `runipy_wrapper.py`
 
 After completing the [setup](https://github.com/cambridgeanalytica/public/tree/master/jupyterstream#setup), to examine (but not run) the `runipy` command for one state (e.g, Washington DC): 
 ```
-python runipy_wrapper.py -state_abrv DC
+python demo_runipy.py -l DC
 ```
 
-To execute on one state (e.g, Washington DC) add the `-run` flag is in:  
+To execute on one state (e.g, Washington DC) add the `--run` flag is in:  
 ```
-python runipy_wrapper.py -state_abrv DC -run
+python demo_runipy.py -l DC --run
 ```
-This will create a subfolder in `[...]/jupyterstream/notebooks/` called `notebook_runs`. Within should be an executed notebook called `my_notebook_DC.ipynb`.  
+This will create a subfolder in `[...]/jupyterstream/demo/notebooks/` called `notebook_runs`. Within should be an executed notebook called `my_notebook_DC.ipynb`.  
 
 ## `parallel_run.py`
+To run the parallelisation part, the GNU [`parallel`](http://savannah.gnu.org/projects/parallel/) is required.  
 
-To examine (but not run) the `parallel` command on all states on 4 servers: 
+To examine (but not run) the `parallel` command on a few variables on 3 servers: 
 ```
-python parallel_run.py -parallel 4
+python demo_runipy.py -j 3 -l AK,AR,AZ,CO,CT,DC
 ```
 
-To execute parallel runs on 4 servers add the `-run` flag is in:
+To execute parallel runs on 3 servers add the --run flag is in:
 ```
-python parallel_run.py -parallel 4 -run
+python demo_runipy.py -j 3 -l AK,AR,AZ,CO,CT,DC --run
 ```
 Within  `notebook_runs` should be 31 executed notebooks ([only 32 states](http://www.huffingtonpost.com/2014/05/27/state-party-registration_n_5399977.html) require party registration; Here we exclude California).
+
+To run all the 31 states  
+```
+python demo_runipy.py -j 4 -l AK,AR,AZ,CO,CT,DC,DE,FL,IA,ID,KS,KY,LA,MA,ME,MD,NC,NE,NH,NJ,NM,NV,NY,OK,OR,PA,RI,SD,UT,WV,WY --run
+```
 
 ## Master Notebook
 We also demo a "master" notebook that collects the important metrics and figures for analysis.  
