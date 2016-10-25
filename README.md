@@ -1,6 +1,6 @@
 #jupyterstream
 **Data delivery streamlines simplified by handy manipulations of Jupyter notebooks**  
-This code accompanies [our blog](http://wiki.cambridgeanalytica.net/blog-runipy) which discusses the benefits of usage of `runipy`, parallelising executions and aggreating the results in one master notebook using `nbformat`.
+This code accompanies [our blog](https://cambridgeanalytica.org/news/jupyterstream) which discusses the benefits of usage of `runipy`, parallelising executions and aggreating the results in one master notebook using `nbformat`.
 
 ![Alt text](./png/jupyterstream.png?raw=true "Title")
 
