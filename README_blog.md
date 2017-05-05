@@ -239,7 +239,7 @@ In the following figure we show the results for a handful of states, segmented b
 
 As for the resulting figure, as expected, because the General Elections in 2008 and 2012 were held in November we clearly see prior to that an increase in the registration rate.
 
-<img src="blog-runipy/jupyterstream_image_02c.png" width="1000">
+![Alt text](./png/jupyterstream_image_02c.png?raw=true "Title") 
 
 
 
