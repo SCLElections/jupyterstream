@@ -56,7 +56,7 @@ notebook_dirnew = "{}notebook_runs/".format(notebook_dir) # directory of new not
 str_val = "state_abrv"
 
 # ---- calling this program during parallisation
-bash_program = "python demo_runipy.py "
+bash_program = "python {}".format(__file__)
 #===============
 
 # ============ Argument passing preparation ==========
